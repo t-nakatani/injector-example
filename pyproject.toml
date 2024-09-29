@@ -1,0 +1,13 @@
+[project]
+name = "injector-example"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "injector==0.22.0",
+    "ruff>=0.6.8",
+]
+
+[tool.uv.sources]
+injector-example = { workspace = true }
