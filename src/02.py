@@ -56,7 +56,9 @@ def configure_injector() -> Injector:
     return injector
 
 
-injector = configure_injector()
-my_controller = injector.get(MyController)
-data = my_controller.get_data()
-print(data)
+# ============================ Main ============================
+if __name__ == "__main__":
+    injector = configure_injector()
+    my_controller = injector.get(MyController)
+    data = my_controller.get_data()
+    print(data)
