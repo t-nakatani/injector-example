@@ -10,7 +10,7 @@ https://injector.readthedocs.io/en/latest/api.html
 curl -LsSf https://astral.sh/uv/install.sh | sh
 uv --version
 
-# -- run with PEP 723 --
+# -- run with inline metadata --
 uv run src/01.py
 uv run src/02.py
 ```

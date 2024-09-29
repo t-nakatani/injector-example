@@ -29,7 +29,8 @@ class MyRepository(IRepository):
         return "Hello from MyRepository!"
 
 
-injector = Injector()
-injector.binder.bind(IRepository, to=MyRepository)
-my_service = injector.get(MyService)
-print(my_service.get_data())
+if __name__ == "__main__":
+    injector = Injector()
+    injector.binder.bind(IRepository, to=MyRepository)
+    my_service = injector.get(MyService)
+    print(my_service.get_data())
